@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.bankstandingxp</groupId>
-    <artifactId>bank-standing-xp</artifactId>
+    <groupId>net.runelite.client.plugins</groupId>
+    <artifactId>bank-standscape</artifactId>
     <version>1.0.0</version>
 
     <properties>
@@ -19,6 +19,12 @@
             <groupId>net.runelite</groupId>
             <artifactId>client</artifactId>
             <version>1.10.30</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
