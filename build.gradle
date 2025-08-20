@@ -7,7 +7,7 @@ repositories {
 	maven {
 		url = 'https://repo.runelite.net'
 		content {
-			includeGroupByRegex("net\\.runelite.*")
+			includeGroupByRegex "net\\.runelite.*"
 		}
 	}
 	mavenCentral()
@@ -32,9 +32,4 @@ version = '1.0-SNAPSHOT'
 tasks.withType(JavaCompile).configureEach {
 	options.encoding = 'UTF-8'
 	options.release.set(11)
-}
-
-java {
-	sourceCompatibility = JavaVersion.VERSION_11
-	targetCompatibility = JavaVersion.VERSION_11
 }
