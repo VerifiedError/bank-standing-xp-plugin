@@ -39,11 +39,11 @@ public class BankStandscapePlugin extends Plugin
 	@Subscribe
 	public void onGameStateChanged(GameStateChanged gameStateChanged)
 	{
-		if (gameStateChanged.getGameState() == GameState.LOGGED_IN)
-		{
-			client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", "Bank Standscape Plugin enabled!", null);
-		}
-	}
+                if (gameStateChanged.getGameState() == GameState.LOGGED_IN)
+                {
+                        client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", config.greeting(), null);
+                }
+        }
 
 	@Provides
 	BankStandscapeConfig provideConfig(ConfigManager configManager)
